@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:flutter_sample/utils/logutil.dart';
 
 class
 HttpUtils{
