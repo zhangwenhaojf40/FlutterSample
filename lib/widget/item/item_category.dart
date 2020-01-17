@@ -12,7 +12,6 @@ class CategoryItem extends StatefulWidget {
 class CategoryItemState extends State<CategoryItem> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return ListTile(
       onTap: () {},
       title: Row(
@@ -66,14 +65,19 @@ class CategoryItemState extends State<CategoryItem> {
           Container(
             width: 10,
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: Image.network(
-              'https://hbimg.huabanimg.com/a9d10755cdf6fef52d529a807810c937dd4c70552bb46-sAwWOc_fw658',
-              width: 80,
-              height: 80,
+          Offstage(
+            offstage: widget.item.images==null||widget.item.images.length==0,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: Image.network(
+                widget.item.images!=null&&widget.item.images.length>0?widget.item.images[0]:'',
+                width: 80,
+                height: 80,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
+
         ],
       ),
     );

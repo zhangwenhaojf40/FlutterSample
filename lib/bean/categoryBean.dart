@@ -58,7 +58,7 @@ class Results {
     url = json['url'];
     used = json['used'];
     who = json['who'];
-//    images = json['images'].cast<String>();
+    images = json['images']?.cast<String>();
   }
 
   Map<String, dynamic> toJson() {

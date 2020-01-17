@@ -50,7 +50,7 @@ class MyListViewState extends State<MyListView> {
         separatorBuilder: (context, index) {
           return Container(
             height: 1,
-            color: Colors.grey.shade100,
+            color: Colors.grey.shade200,
           );
         },
         itemCount: datas.length+1,
