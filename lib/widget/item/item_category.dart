@@ -1,5 +1,5 @@
+import 'package:FlutterSample/bean/categoryBean.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/bean/categoryBean.dart';
 class CategoryItem extends StatefulWidget {
   CategoryItem(this.item);
 

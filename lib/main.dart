@@ -1,8 +1,7 @@
+import 'package:FlutterSample/pages/category.dart';
+import 'package:FlutterSample/pages/home.dart';
+import 'package:FlutterSample/pages/me.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/pages/category.dart';
-import 'package:flutter_sample/pages/home.dart';
-import 'package:flutter_sample/pages/me.dart';
-import 'package:flutter_sample/pages/meizi.dart';
 
 void main() => runApp(MyApp());
 

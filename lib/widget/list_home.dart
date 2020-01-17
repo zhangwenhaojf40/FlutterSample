@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/widget/item/item_home.dart';
+
+import 'item/item_home.dart';
 class ListHome extends StatelessWidget{
 
   var list = List();

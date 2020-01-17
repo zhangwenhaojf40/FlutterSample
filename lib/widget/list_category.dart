@@ -1,11 +1,11 @@
 import 'dart:collection';
 import 'dart:convert';
 
+import 'package:FlutterSample/bean/categoryBean.dart';
+import 'package:FlutterSample/http/httputils.dart';
+import 'package:FlutterSample/http/networkapi.dart';
+import 'package:FlutterSample/pages/loading.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/bean/categoryBean.dart';
-import 'package:flutter_sample/http/httputils.dart';
-import 'package:flutter_sample/http/networkapi.dart';
-import 'package:flutter_sample/pages/loading.dart';
 
 import 'item/item_category.dart';
 class MyListView extends StatefulWidget {

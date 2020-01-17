@@ -1,5 +1,5 @@
+import 'package:FlutterSample/widget/list_category.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/widget/list_category.dart';
 
 class CategoryPage extends StatefulWidget {
   @override
