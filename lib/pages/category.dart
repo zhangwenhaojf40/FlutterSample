@@ -8,7 +8,7 @@ class CategoryPage extends StatefulWidget {
 
 class CategoryPageState extends State<CategoryPage>
     with SingleTickerProviderStateMixin {
-  var _tabList = ["all", "Android", "iOS", "App", "前端", "拓展资源", "瞎推荐", "休息视频"];
+  var _tabList = ["All", "Android", "iOS", "App", "前端", "拓展资源", "瞎推荐", "休息视频"];
   var _tabController;
 
   @override
@@ -30,6 +30,9 @@ class CategoryPageState extends State<CategoryPage>
           ),
           bottom: TabBar(
             isScrollable: true,
+            labelStyle:TextStyle(
+              fontSize: 16,
+            ) ,
             controller: _tabController,
             tabs: _tabList.map((itme) {
               return Tab(text: itme);
